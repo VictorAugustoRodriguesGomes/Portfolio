@@ -11,15 +11,20 @@ Para mais informações de contatos e afins, o meu currículo se encontra a sua 
 </br>
 
 <div align="center">
-<!-- <img src="" width="400"/> -->
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p1.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p2.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p3.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p4.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p5.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p6.PNG" width="400"/>
 </div>
 
 # Pré-requisitos
 #### Para poder ter aceso ao  site clique no link abaixo: 
-1. [Portefólio](https://bit.ly/39IqDrm)
+1. [Portefólio](https://bit.ly/39IqDrm).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
-2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de codigo html
+2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
 
 </br>
 
@@ -28,5 +33,5 @@ Para mais informações de contatos e afins, o meu currículo se encontra a sua 
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 ---------
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p7.PNG?raw=true"/>
 
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_ARK_07_Java/blob/main/img/base/dados.png?raw=true"/>
