@@ -1,4 +1,4 @@
-# Meu Portefólio 
+# Meu Portfólio 
 
 Olá! O meu nome é Victor Augusto e esse é o meu portefólio desenvolvido mim.
 O objetivo é demonstrar os meus projetos e habilidades como desenvolvedor.
@@ -21,7 +21,7 @@ Para mais informações de contatos e afins, o meu currículo se encontra a sua 
 
 # Pré-requisitos
 #### Para poder ter aceso ao  site clique no link abaixo: 
-1. [Portefólio](https://bit.ly/39IqDrm).
+1. [Portfólio](https://bit.ly/39IqDrm).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
