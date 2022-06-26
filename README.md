@@ -1,13 +1,7 @@
 # Meu Portfólio 
 
-Olá! O meu nome é Victor Augusto e esse é o meu portefólio desenvolvido mim.
-O objetivo é demonstrar os meus projetos e habilidades como desenvolvedor.
-O portefólio foi desenvolvido utilizando HTML, CSS e JS (JavaScript).
-Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para ajudar no desenvolvimento.
-<!-- Então o que você achou desse projeto?
-Mande a sua mensagem para esse e-mail: victor.augusto.desenvolvedor@gmail.com.
-E se você quiser ver mais dos meus projetos, confiram o meu LinkedIn ou o meu GitHub.
-Para mais informações de contatos e afins, o meu currículo se encontra a sua disposição logo a baixo. -->
+Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por mim. O objetivo é demonstrar os meus projetos e habilidades como desenvolvedor. O portfólio foi desenvolvido utilizando HTML, CSS e JS (JavaScript). Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para ajudar no desenvolvimento.
+</br>
 </br>
 
 <div align="center">
