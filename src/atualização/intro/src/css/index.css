@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 29px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+header .logo span {
+    color: #f29200;
+    font-weight: 500;
+}
+
+header.sticky .logo {
+    color: #111111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px;
+    transition: 0.5s;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #f29200;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+header.sticky ul li a:hover,
+header.sticky ul li a.active {
+    color: #ffffff;
+}
+
+header.sticky ul li a {
+    color: #111111;
+}
+
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        display: block;
+        padding: 150px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111111;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    header ul li:hover a:hover,
+    header ul li.active a {
+        color: #ffffff;
+    }
+
+    header .logo {
+        font-weight: 500;
+    }
+
+    .toggle {
+        position: relative;
+        width: 53px;
+        height: 50px;
+        background: #ffffff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.17);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1001;
+    }
+
+    .toggle span {
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background: #f29200;
+        border-radius: 4px;
+        transition: 0.5s;
+        left: 8px;
+    }
+
+    .toggle span:nth-child(1) {
+        transform: translateY(-14px);
+        width: 25px;
+        left: 8px;
+    }
+
+    .toggle span:nth-child(2) {
+        transform: translateY(14px);
+        width: 15px;
+        left: 8px;
+    }
+
+    .toggle.active span:nth-child(1) {
+        width: 40px;
+        transform: translateY(0px) rotate(45deg);
+        transition-delay: 0.125s;
+        left: 5px;
+    }
+
+    .toggle.active span:nth-child(2) {
+        width: 40px;
+        transform: translateY(0px) rotate(315deg);
+        transition-delay: 0.25s;
+        left: 5px;
+    }
+
+    .toggle.active span:nth-child(3) {
+        transform: translateX(60px);
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .menu {
+        width: 100%;
+        padding: 50px 0;
+        overflow-y: scroll;
+    }
+
+    .menu::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.introduction {
+    width: 100%;
+    height: 100vh;
+    background: #2f4f4f;
+}
+
+.introduction .row {
+    width: 100%;
+    height: 100vh;
+    padding: 120px 100px 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .row .fieldLeft {
+    width: 80%;
+    height: 100%;
+    background: #203636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.introduction .row .fieldRight {
+    width: 20%;
+    height: 100%;
+}
+
+.introduction .row .fieldRight .slidesWithImageList {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides {
+    padding: 20px;
+    background: #2f4f4f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides:hover {
+    background: #203636;
+}
+
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides.active {
+    background: #20363660;
+    overflow: hidden;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides.active:hover {
+    background: #20363660;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides.active::before {
+    content: '';
+    background: #203636;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    animation: passSlideEffect 30s infinite linear;
+}
+
+@keyframes passSlideEffect {
+    0% {
+        width: 0%;
+        opacity: 0%;
+    }
+
+    8% {
+        opacity: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides .fieldImg {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 2;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides .fieldImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.introduction .row .fieldRight .slidesWithImageList .cardSlides h1 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 2;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage,
+.introduction .row .fieldLeft .fieldSlidesImageSecond {
+    position: relative;
+    display: none;
+    border-radius: 30px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage.active,
+.introduction .row .fieldLeft .fieldSlidesImageSecond.active {
+    display: block;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage h1 {
+    color: #ffffff;
+    font-size: 18px;
+    z-index: 2;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage h1 span {
+    color: #f29200;
+    font-weight: 600;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect {
+    display: flex;
+    width: 100%;
+    background: #203636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul {
+    margin-left: 5px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li {
+    color: #f29200;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    position: relative;
+    top: 0;
+    animation: slide 16s steps(4) infinite;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li span {
+    position: relative;
+    text-align: left;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    border-left: 3px solid #f29200;
+    animation: typing 4s steps(10) infinite;
+    background: #203636;
+}
+
+@keyframes slide {
+    100% {
+        top: -120px;
+    }
+}
+
+@keyframes typing {
+    50% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+
+    100% {
+        left: 0%;
+        margin: 0;
+    }
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .btn {
+    background: #f29200;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .btn:hover {
+    letter-spacing: 7px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 6;
+    object-fit: cover;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .sci li {
+    list-style: none;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .sci li i {
+    color: #ffffff;
+    font-size: 70px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImage .sci li i:hover {
+    opacity: 1;
+    color: #f29200;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    transition: all 0.5s ease-out;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    backdrop-filter: blur(15px);
+    background: #00000030;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before img {
+    width: 100%;
+    height: 280px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
+    width: 100%;
+    height: 280px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: all 0.5s ease-out;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText {
+    position: absolute;
+    bottom: 0;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div {
+    display: none;
+    transition: 0.5s ease-in-out;
+    transition: 1s;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div.active {
+    display: initial;
+    transition: 1s;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    transition: 1s;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div a {
+    background: #f29200;
+    color: #ffffff;
+    padding: 15px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.introduction .row .fieldLeft .fieldSlidesText div a:hover {
+    letter-spacing: 7px;
+}
+
+.introduction .row .fieldRight .slidesListWithBar {
+    position: relative;
+    display: none;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar div {
+    height: 8px;
+    width: 40px;
+    background: #f9f9f9;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar div.active {
+    background: #f29200;
+}
+
+@media (max-width: 999px) {
+    .introduction {
+        min-height: 100vh;
+    }
+
+    .introduction .row {
+        min-height: 100vh;
+        padding: 100px 20px 20px 20px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introduction .row .fieldLeft {
+        width: 100%;
+        height: 80%;
+        margin-right: 0px;
+    }
+
+    .introduction .row .fieldRight {
+        width: 100%;
+        height: 0%;
+        margin-top: 30px;
+    }
+
+    .introduction .row .fieldRight .slidesWithImageList {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .introduction .row .fieldRight .slidesWithImageList .cardSlides {
+        margin: 0 5px;
+    }
+
+    .introduction .row .fieldRight .slidesWithImageList .cardSlides:nth-child(1) {
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .introduction .row .fieldRight .slidesWithImageList .cardSlides:nth-child(5) {
+        margin: 0;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .introduction .row .fieldLeft {
+        overflow: hidden;
+        width: 100%;
+        height: 90%;
+    }
+
+    .introduction .row .fieldLeft .fieldSlidesText {
+        /* position: absolute;
+        padding: 0 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 2; */
+        top: 0%;
+        padding: 0 10px;
+    }
+
+    .introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg::before {
+        height: 100vh;
+        backdrop-filter: blur(20px);
+        background: #00000030;
+    }
+
+    .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before img {
+        height: 100%;
+    }
+    
+    .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
+        height: 100%;
+    }
+
+    .introduction .row .fieldLeft .fieldSlidesImage .btn:hover {
+        letter-spacing: 4px;
+    }
+
+    .introduction .row .fieldLeft .fieldSlidesText div a:hover {
+        letter-spacing: 4px;
+    }
+
+    .introduction .row .fieldRight .slidesWithImageList {
+        display: none;
+    }
+
+    .introduction .row .fieldRight .slidesListWithBar {
+        display: flex;
+    }
+}
