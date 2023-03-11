@@ -194,149 +194,18 @@ header.sticky ul li a {
     }
 }
 
+
 .introduction {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     background: #2f4f4f;
-}
-
-.introduction .row {
-    width: 100%;
-    height: 100vh;
-    padding: 120px 100px 20px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease-out;
-}
-
-.introduction.sticky .row {
-    padding: 120px 40px 20px 40px;
-}
-
-.introduction .row .fieldLeft {
-    width: 80%;
-    height: 100%;
-    background: #203636;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 10px;
-    margin-right: 20px;
-    position: relative;
 }
 
-.introduction .row .fieldRight {
-    width: 20%;
-    height: 100%;
-}
-
-.introduction .row .fieldRight .slidesWithImageList {
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides {
-    padding: 20px;
-    background: #2f4f4f;
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.5s ease;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides:hover {
-    background: #203636;
-}
-
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides.active {
-    background: #20363660;
-    overflow: hidden;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides.active:hover {
-    background: #20363660;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides.active::before {
-    content: '';
-    background: #203636;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: all 0.5s ease;
-    border-radius: 10px;
-    animation: passSlideEffect 30s infinite linear;
-}
-
-@keyframes passSlideEffect {
-    0% {
-        width: 0%;
-        opacity: 0%;
-    }
-
-    8% {
-        opacity: 100%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides .fieldImg {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    z-index: 2;
-    margin-right: 5px;
-    border-radius: 10px;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides .fieldImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.introduction .row .fieldRight .slidesWithImageList .cardSlides h1 {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    z-index: 2;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImage,
-.introduction .row .fieldLeft .fieldSlidesImageSecond {
-    position: relative;
-    display: none;
-    border-radius: 10px;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImageSecond {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImage.active,
-.introduction .row .fieldLeft .fieldSlidesImageSecond.active {
-    display: block;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImage h1 {
+.introduction .fieldText h1 {
     color: #ffffff;
     font-size: 18px;
     z-index: 2;
@@ -344,43 +213,43 @@ header.sticky ul li a {
     margin-bottom: 2px;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage h1 span {
+.introduction .fieldText h1 span {
     color: #f29200;
     font-weight: 600;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage h2 {
+.introduction .fieldText h2 {
     color: #ffffff;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect {
+.introduction .fieldText .writingEffect {
     display: flex;
     width: 100%;
-    background: #203636;
+    background: #2f4f4f;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect h3 {
+.introduction .fieldText .writingEffect h3 {
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul {
+.introduction .fieldText .writingEffect ul {
     margin-left: 5px;
     line-height: 30px;
     height: 30px;
     overflow: hidden;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li {
+.introduction .fieldText .writingEffect ul li {
     color: #f29200;
     list-style: none;
     font-size: 20px;
@@ -391,12 +260,12 @@ header.sticky ul li a {
     animation: slide 16s steps(4) infinite;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li span {
+.introduction .fieldText .writingEffect ul li span {
     position: relative;
     text-align: left;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .writingEffect ul li span::after {
+.introduction .fieldText .writingEffect ul li span::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -404,7 +273,7 @@ header.sticky ul li a {
     left: 0%;
     border-left: 3px solid #f29200;
     animation: typing 4s steps(10) infinite;
-    background: #203636;
+    background: #2f4f4f;
 }
 
 @keyframes slide {
@@ -425,7 +294,7 @@ header.sticky ul li a {
     }
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .btn {
+.introduction .fieldText .btn {
     background: #f29200;
     color: #ffffff;
     padding: 15px 30px;
@@ -442,11 +311,14 @@ header.sticky ul li a {
     margin-top: 10px;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .btn:hover {
+.introduction .fieldText .btn:hover {
     letter-spacing: 7px;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .sci {
+.introduction .sci {
+    position: absolute;
+    left: auto;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,247 +327,20 @@ header.sticky ul li a {
     object-fit: cover;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .sci li {
+.introduction .sci li {
     list-style: none;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .sci li i {
+.introduction .sci li i {
     color: #ffffff;
     font-size: 70px;
     transform: scale(0.5);
     transition: 0.5s;
 }
 
-.introduction .row .fieldLeft .fieldSlidesImage .sci li i:hover {
+.introduction .sci li i:hover {
     opacity: 1;
     color: #f29200;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    border-radius: 5px;
-    transition: all 0.5s ease-out;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    backdrop-filter: blur(15px);
-    background: #00000030;
-    transition: all 0.5s ease-out;
-    z-index: 3;
-}
-
-/* .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before img {
-    width: 100%;
-    height: 280px;
-}
-
- .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
-    width: 100%;
-    height: 280px;
-}  */
-
-.introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before {
-    width: 100%;
-    height: 100vh;
-}
-
-.introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
-    transform: scale(1.1);
-}
-
-/* **** */
-.introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: all 0.5s ease-out;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText {
-    position: absolute;
-    bottom: 0;
-    padding: 0 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 2;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div {
-    display: none;
-    transition: 0.5s ease-in-out;
-    transition: 1s;
-    margin-bottom: 30px;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div.active {
-    display: initial;
-    transition: all 1s ease-out;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div h2 {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    transition: all 1s ease-out;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div p {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    margin: 10px 0;
-    transition: all 1s ease-out;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div a {
-    background: #f29200;
-    color: #ffffff;
-    padding: 15px 30px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 0px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.introduction .row .fieldLeft .fieldSlidesText div a:hover {
-    letter-spacing: 7px;
-}
-
-.introduction .row .fieldRight .slidesListWithBar {
-    position: relative;
-    display: none;
-    z-index: 3;
-    justify-content: center;
-    align-items: center;
-}
-
-.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar div {
-    height: 8px;
-    width: 40px;
-    background: #f9f9f9;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.introduction .row .fieldRight .slidesListWithBar .cardSlidesBar div.active {
-    background: #f29200;
-}
-
-@media (max-width: 999px) {
-    .introduction {
-        min-height: 100vh;
-    }
-
-    .introduction.sticky .row,
-    .introduction .row {
-        min-height: 100vh;
-        padding: 100px 20px 20px 20px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .introduction .row .fieldLeft {
-        width: 100%;
-        height: 80%;
-        margin-right: 0px;
-    }
-
-    .introduction .row .fieldRight {
-        width: 100%;
-        height: 0%;
-        margin-top: 30px;
-    }
-
-    .introduction .row .fieldRight .slidesWithImageList {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .introduction .row .fieldRight .slidesWithImageList .cardSlides {
-        margin: 0 5px;
-    }
-
-    .introduction .row .fieldRight .slidesWithImageList .cardSlides:nth-child(1) {
-        margin: 0;
-        margin-right: 5px;
-    }
-
-    .introduction .row .fieldRight .slidesWithImageList .cardSlides:nth-child(5) {
-        margin: 0;
-        margin-left: 5px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 800px) {
-    .introduction .row .fieldLeft {
-        overflow: hidden;
-        width: 100%;
-        height: 90%;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesText {
-        top: 0%;
-        padding: 0 10px;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg::before {
-        height: 100vh;
-        backdrop-filter: blur(20px);
-        background: #00000030;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before img {
-        height: 100%;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
-        height: 100%;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesImage .btn:hover {
-        letter-spacing: 4px;
-    }
-
-    .introduction .row .fieldLeft .fieldSlidesText div a:hover {
-        letter-spacing: 4px;
-        margin-bottom: 0;
-    }
-
-    .introduction .row .fieldRight .slidesWithImageList {
-        display: none;
-    }
-
-    .introduction .row .fieldRight .slidesListWithBar {
-        display: flex;
-    }
 }
 
 .titleField h1 {
@@ -763,7 +408,7 @@ header.sticky ul li a {
     font-weight: 300;
 }
 
-.information .row .fieldRight .btn {
+.information .row .fieldRight a {
     background: #f29200;
     color: #ffffff;
     padding: 15px 30px;
@@ -781,7 +426,7 @@ header.sticky ul li a {
 
 }
 
-.information .row .fieldRight .btn:hover {
+.information .row .fieldRight a:hover {
     letter-spacing: 7px;
 }
 
@@ -838,30 +483,6 @@ header.sticky ul li a {
         width: 100%;
         margin-left: 0px;
     }
-}
-
-.information .row .fieldRight .sci {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-    object-fit: cover;
-}
-
-.information .row .fieldRight .sci li {
-    list-style: none;
-}
-
-.information .row .fieldRight .sci li i {
-    color: #ffffff;
-    font-size: 35px;
-    transition: all 0.5s ease-out;
-    margin: 15px 15px 0px 0px;
-}
-
-.information .row .fieldRight .sci li i:hover {
-    opacity: 1;
-    color: #f29200;
 }
 
 .formation {
@@ -951,27 +572,6 @@ header.sticky ul li a {
     padding: 80px 40px;
 }
 
-.projects a {
-    background: #f29200;
-    color: #ffffff;
-    padding: 20px 30px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 0px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: 0.5s;
-    text-align: center;
-    width: 100%;
-}
-
-.projects a:hover {
-    letter-spacing: 5px;
-}
-
 .projects .row {
     display: flex;
 }
@@ -993,39 +593,34 @@ header.sticky ul li a {
     width: 100%;
     height: 100%;
     background: #203636;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.20), 0 3px 4px 0 rgba(0, 0, 0, 0.40);
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.10), 0 3px 4px 0 rgba(255, 255, 255, 0.10);
     border-radius: 3px;
-    position: relative;
-    display: flex;
 }
 
-.projects .row .col33 .card .fieldText {
-    display: flex;
-    flex-direction: column;
-}
-
-.projects .row .col33 .card .fieldText .fieldImg {
+.projects .row .col33 .card .fieldImg {
     width: 100%;
     height: 250px;
     color: #ffffff;
     overflow: hidden;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    display: block;
 }
 
-.projects .row .col33 .card .fieldText .fieldImg img {
+.projects .row .col33 .card .fieldImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    display: block;
 }
 
-.projects .row .col33 .card .fieldText .fieldImg img:hover {
+.projects .row .col33 .card .fieldImg img:hover {
     transform: scale(1.1);
+}
+
+.projects .row .col33 .card .fieldText {
+    padding: 20px;
 }
 
 .projects .row .col33 .card .fieldText h1 {
@@ -1035,8 +630,8 @@ header.sticky ul li a {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: capitalize;
+    margin-bottom: 10px;
     color: #ffffff;
-    margin: 20px 20px 10px 20px;
 }
 
 .projects .row .col33 .card .fieldText p {
@@ -1046,17 +641,7 @@ header.sticky ul li a {
     font-weight: 400;
     letter-spacing: 1px;
     color: #ffffff;
-    flex: auto;
-    margin: 0px 20px 10px 20px;
-}
-
-.projects .row .col33 .card .fieldText p span {
-    float: left;
-    margin-top: 15px;
-}
-
-.projects .row .col33 .card .fieldText .fieldBTN {
-    margin: 0px 20px 20px 20px;
+    margin-bottom: 10px;
 }
 
 .projects .row .col33 .card .fieldText .fieldBTN a {
@@ -1074,13 +659,14 @@ header.sticky ul li a {
     transition: 0.5s;
     text-align: center;
     width: 100%;
+
 }
 
 .projects .row .col33 .card .fieldText .fieldBTN a:nth-child(1) {
     margin-right: 10px;
 }
 
-.projects .row .col33 .card .fieldText .fieldBTN a:hover {
+.projects .row .col33 .card .fieldText a:hover {
     letter-spacing: 5px;
 }
 
@@ -1089,16 +675,8 @@ header.sticky ul li a {
         padding: 40px 20px;
     }
 
-    .projects .row .col33 .card .fieldText h1 {
-        margin: 10px;
-    }
-
-    .projects .row .col33 .card .fieldText p {
-        margin: 0px 10px 10px 10px;
-    }
-
-    .projects .row .col33 .card .fieldText .fieldBTN {
-        margin: 0px 10px 10px 10px;
+    .projects .row .col33 .card .fieldText {
+        padding: 10px;
     }
 }
 
