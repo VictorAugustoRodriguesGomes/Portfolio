@@ -5,12 +5,12 @@ Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por 
 </br>
 
 <div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p1.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p2.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p3.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p4.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p5.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p6.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p1.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p2.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p3.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p4.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p5.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p6.PNG" width="400"/>
 </div>
 
 # Pré-requisitos
@@ -27,5 +27,5 @@ Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por 
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 ---------
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/base/p7.PNG?raw=true"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p7.PNG?raw=true"/>
 
