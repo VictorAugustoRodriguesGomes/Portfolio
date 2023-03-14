@@ -492,16 +492,6 @@ header.sticky ul li a {
     z-index: 3;
 }
 
-/* .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before img {
-    width: 100%;
-    height: 280px;
-}
-
- .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg img {
-    width: 100%;
-    height: 280px;
-}  */
-
 .introduction .row .fieldLeft .fieldSlidesImageSecond:hover .fieldImg::before {
     width: 100%;
     height: 100vh;
@@ -511,7 +501,6 @@ header.sticky ul li a {
     transform: scale(1.1);
 }
 
-/* **** */
 .introduction .row .fieldLeft .fieldSlidesImageSecond .fieldImg img {
     height: 100%;
     width: 100%;
@@ -1296,7 +1285,6 @@ header.sticky ul li a {
 .contact .container .row .col50 .inputBox input:valid+.text {
     top: -35px;
 }
-
 .contact .container .row .col50 .inputBox .line,
 .contact .container .row .col100 .inputBox .line {
     position: absolute;
