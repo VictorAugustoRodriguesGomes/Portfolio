@@ -28,4 +28,3 @@ Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 ---------
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github base/p7.PNG?raw=true"/>
-
