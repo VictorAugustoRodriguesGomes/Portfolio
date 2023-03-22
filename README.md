@@ -2,7 +2,6 @@
 
 
 
-
 <div>
 <a href="https://www.linkedin.com/in/victor-augusto-dev" target="_blank"><img alt="Meu-LinkedIn" src="https://img.shields.io/badge/MEU-Linkedin-%230e76a8?style=for-the-badge&logo=appveyor"></a>
 <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf" target="_blank"><img alt="Meu-Currículo" src="https://img.shields.io/badge/MEU-Currículo-%23003d70?style=for-the-badge&logo=appveyor"></a>
