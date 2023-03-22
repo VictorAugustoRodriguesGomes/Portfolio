@@ -1,7 +1,4 @@
 <h1>  Meu Portfólio. </h1> 
-
-
-
 <div>
 <a href="https://www.linkedin.com/in/victor-augusto-dev" target="_blank"><img alt="Meu-LinkedIn" src="https://img.shields.io/badge/MEU-Linkedin-%230e76a8?style=for-the-badge&logo=appveyor"></a>
 <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf" target="_blank"><img alt="Meu-Currículo" src="https://img.shields.io/badge/MEU-Currículo-%23003d70?style=for-the-badge&logo=appveyor"></a>
@@ -45,12 +42,15 @@ Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para aj
 
 </br> <div>
 <h2> Pré-requisitos </h2> 
+</div>
+
 #### Para poder ter aceso ao  site clique no link abaixo: 
 1. [Portfólio](https://bit.ly/39IqDrm).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
 
+<div>
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 </div> </br>
 
