@@ -9,6 +9,7 @@
 </div>
 
 </br>
+<div>
 <h2> INFORMAÇÕES </h2> 
 
 <p> Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por mim. </br>
@@ -18,44 +19,55 @@ Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para aj
 
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 
-
+</div>
 </br>
+
+<div>
+<h2> ATUALIZAÇÃO DO PROJETO </h2> 
+<div align="center">
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a1.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a2.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a3.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a4.png" width="49.5%"/>
+</div>
+
+  </br>
 <h2> IMAGENS DO PROJETO </h2> 
 <div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p1.PNG" width="49.5%"/>
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p2.PNG" width="49.5%"/>
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p3.PNG" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p4.PNG" width="49.5%"/>
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p5.PNG" width="49.5%"/>
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p6.PNG" width="49.5%"/>
 </div>
 
-</br>
-<h2> IMAGENS DA VERSÃO ANTIGA </h2> 
-<div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p1.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p2.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p3.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p4.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p5.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p6.PNG" width="400"/>
-</div>
+</br> 
 
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 
+</div> </br>
 
-# Pré-requisitos
+
+<div>
+<h2> Pré-requisitos </h2> 
+
 #### Para poder ter aceso ao  site clique no link abaixo: 
 1. [Portfólio](https://bit.ly/39IqDrm).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
 
-</br>
+<img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 
-# Licença
+</div> </br>
 
+
+<div>
+<h2> Licença </h2> 
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
----------
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p7.PNG?raw=true"/>
+</br> </br>
+
+<div align="center">
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p7.PNG?raw=true" width="50%"/>
+
+</div> </div>
