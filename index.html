@@ -3,702 +3,687 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Victor Augusto Rodrigues Gomes">
+    <meta name="keywords" content="desenvolvedor, portfólio, projetos, habilidades, Victor Augusto">
+    <meta name="description" content="Olá! O meu nome é Victor Augusto e este é o meu portfólio, desenvolvido por mim. 
+        O objetivo deste projeto é apresentar meus trabalhos e habilidades como desenvolvedor.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Victor Augusto | Portfólio </title>
-    <link rel="shortcut icon" href="src/img/base/icone.png">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/index.css">
-    <script src="https://kit.fontawesome.com/59a2aef779.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/img/base/icon.webp">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="logo"> Victor <span> Augusto </span> </a>
+    <section class="loading">
+        <div class="container">
+            <h1 id="h1Loading" data-text=""></h1>
+        </div>
+    </section>
+
+    <header class="top">
+        <a href="index.html" class="logo">
+            <h1> Victor <span> Augusto </span> </h1>
+        </a>
         <div class="toggle" onclick="toggleMenu();">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <ul class="menu">
-            <li> <a href="#introduction" onclick="efeitoMenu();"> Início </a> </li>
+        <ul id="menu" class="menu">
+            <li class="active"> <a href="#introduction" onclick="efeitoMenu();"> Início </a> </li>
             <li> <a href="#information" onclick="efeitoMenu();"> Informações </a> </li>
-            <li> <a href="#formation" onclick="efeitoMenu();"> Formação </a> </li>
             <li> <a href="#projects" onclick="efeitoMenu();"> Projetos </a> </li>
+            <li> <a href="#formation" onclick="efeitoMenu();"> Formação </a> </li>
             <li> <a href="#skills" onclick="efeitoMenu();"> Habilidades </a> </li>
             <li> <a href="#contact" onclick="efeitoMenu();"> Contatos </a> </li>
         </ul>
     </header>
 
-    <section class="introduction" id="introduction">
-        <div class="row">
-            <div class="fieldLeft" id="fieldLeft">
-                <div class="fieldSlidesImage active">
-                    <h1><span>Olá Mundo! </span> Meu nome é: </h1>
-                    <h2>Victor Augusto Rodrigues Gomes </h2>
-                    <span class="writingEffect">
-                        <h3> Desenvolvedor </h3>
-                        <ul>
-                            <li><span> Front-end e Back-end </span></li>
-                            <li><span> HTML, CSS e JavaScript </span></li>
-                            <li><span> PHP e Python </span></li>
-                            <li><span> Java </span></li>
-                        </ul>
-                    </span>
-                    <a class="btn"
-                        href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
-                        target="_blank" rel="noopener noreferrer"> Baixar Currículo </a>
+    <section id="introduction" class="introduction">
+        <div id="introductionBackground" class="container-background">
+            <div class="background active"></div>
+            <div class="background"></div>
+            <div class="background"></div>
+            <div class="background"></div>
+        </div>
 
-                    <ul class="sci">
-                        <li><a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
-                                rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li><a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank"
-                                rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </li>
-                    </ul>
+        <div class="container-color-option">
+            <div onclick="changeColor(1)"></div>
+            <div onclick="changeColor(2)"></div>
+            <div onclick="changeColor(3)"></div>
+            <div onclick="changeColor(4)"></div>
+            <div onclick="changeColor(5)"></div>
+        </div>
+
+        <div class="container">
+            <div class="container-text">
+                <div class="text-swipe line-one">
+                    <p> <i class='bx bx-code-alt'></i> <span> Olá Mundo! </span> Meu nome é:</p>
                 </div>
 
-                <div class="fieldSlidesImageSecond">
-                    <span class="fieldImg">
-                        <img src="src/img/projetos/github_2.png" alt="img" />
-                    </span>
+                <div class="text-swipe line-two">
+                    <h1> victor augusto </h1>
                 </div>
 
-                <div class="fieldSlidesImageSecond">
-                    <span class="fieldImg">
-                        <img src="src/img/projetos/intro.png" alt="img" />
-                    </span>
+                <div class="text-swipe line-three">
+                    <h1> rodrigues gomes </h1>
                 </div>
 
-                <div class="fieldSlidesImageSecond">
-                    <span class="fieldImg">
-                        <img src="src/img/projetos/Projeto_Coala.png" alt="img" />
-                    </span>
-                </div>
-
-                <div class="fieldSlidesImageSecond">
-                    <span class="fieldImg">
-                        <img src="src/img/projetos/Projeto_ARK_01.png" alt="img" />
-                    </span>
-                </div>
-
-                <div class="fieldSlidesText" id="fieldSlidesText">
-                    <div class="active"> </div>
-
-                    <div class="">
-                        <h2>Meu GITHUB </h2>
-                        <p>Não deixe de conferir o meu github.</p>
-                        <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank"
-                            rel="noopener noreferrer" class="btn"> Meu GITHUB </a>
+                <div class="text-swipe line-four">
+                    <div class="text-reveal">
+                        <h1> Desenvolvedor
+                            <span data-text="Front-end"> Front-end </span>
+                            <span data-text="Back-end"> Back-end </span>
+                            <span data-text="Java"> Java </span>
+                            <span data-text="JavaScript"> JavaScript </span>
+                            <span data-text="TypeScript"> TypeScript </span>
+                        </h1>
                     </div>
+                </div>
 
-                    <div class="">
-                        <h2>Projetos Desenvolvidos</h2>
-                        <p> Não deixe de conferir todos os meus Projetos Desenvolvidos. </p>
-                        <a href="projetos-desenvolvidos.html" class="btn"> Projetos Desenvolvidos </a>
-                    </div>
+                <div class="text-link">
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxs-download"></i> Baixar Currículo</a>
 
-                    <div class="">
-                        <h2>Projeto Coala </h2>
-                        <p>Com o objetivo de demostrar as minhas habilidades como desenvolvedor, desenvolvi esse projeto
-                            que informa o horário e a data atual, acordo com a horário de Brasília, a hora oficial do
-                            Brasil. O site também conta com um calendário que possui algumas interações.</p>
-                        <a href="https://projeto-coala.web.app/" target="_blank" rel="noopener noreferrer" class="btn">
-                            Projeto Coala </a>
-                        <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Coala" target="_blank"
-                            rel="noopener noreferrer" class="btn"> GITHUB </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                        rel="noopener noreferrer"> <i class='bx bxl-linkedin'></i> </a>
 
-                    <div class="">
-                        <h2>Projeto Ark 1</h2>
-                        <p>Os projetos nomeados ARK são uma aplicação desenvolvida em Java na IDE NetBeans. O objetivo é
-                            desenvolver um projeto partindo de listas de exercícios encontrados na Internet, seriam
-                            projetos mais simples.</p>
-                        <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_ARK_01" target="_blank"
-                            rel="noopener noreferrer" class="btn"> GITHUB </a>
-                    </div>
+                    <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer">
+                        <i class='bx bxl-github'></i> </a>
                 </div>
             </div>
 
-            <div class="fieldRight">
+            <div class="container-carousel">
+                <div id="introductionCarouselCard" class="container-carousel-card">
+                    <div class="card active">
+                        <div class="card-img">
+                            <img src="src/img/introduction/carousel/curriculum.webp">
+                        </div>
 
-                <div class="slidesWithImageList" id="slidesWithImageList">
+                        <div class="card-text">
+                            <h1>Meu Currículo</h1>
+                            <p> Confira meu currículo e conheça mais sobre minhas qualificações e experiências. Estou
+                                preparado para contribuir com novos desafios.</p>
 
-                    <div class="cardSlides active" onclick="intro0();">
-                        <span class="fieldImg">
-                            <img src="src/img/projetos/introdução.png" alt="img" />
-                        </span>
-                        <h1> Introdução </h1>
+                            <div class="sci">
+                                <i class='bx bx-detail'></i>
+                            </div>
+
+                            <a class="btn-primary"
+                                href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                                target="_blank" rel="noopener noreferrer"> Saiba mais </a>
+                        </div>
                     </div>
 
-                    <div class="cardSlides" onclick="intro1();">
-                        <span class="fieldImg">
-                            <img src="src/img/projetos/github_1.png" alt="img" />
-                        </span>
-                        <h1> Meu GITHUB </h1>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="src/img/introduction/carousel/developed_projects.webp">
+                        </div>
+
+                        <div class="card-text">
+                            <h1>Meus Projetos Desenvolvidos</h1>
+                            <p> Dê uma olhada nos projetos que desenvolvi. Eles mostram minha capacidade de transformar
+                                ideias em soluções digitais.</p>
+                            <div class="sci">
+                                <i class='bx bxl-java'></i>
+                                <i class='bx bxl-javascript'></i>
+                                <i class='bx bxl-typescript'></i>
+                                <i class='bx bxl-android'></i>
+                                <i class='bx bxs-file-html'></i>
+                                <i class='bx bxs-file-css'></i>
+                                <i class='bx bxl-tailwind-css'></i>
+                                <i class='bx bxl-react'></i>
+                                <i class='bx bxl-nodejs'></i>
+                                <i class='bx bxs-data'></i>
+                                <i class='bx bxl-postgresql'></i>
+                                <i class='bx bxl-mongodb'></i>
+                            </div>
+                            <a id="colorLine" class="btn-primary" href="#projects">Saiba mais</a>
+                        </div>
                     </div>
 
-                    <div class="cardSlides" onclick="intro2();">
-                        <span class="fieldImg">
-                            <img src="src/img/projetos/intro.png" alt="img" />
-                        </span>
-                        <h1> Meus Projetos </h1>
+                    <div class="card ">
+                        <div class="card-img">
+                            <img src="src/img/introduction/carousel/linkedin.webp">
+                        </div>
+
+                        <div class="card-text">
+                            <h1>Meu LinkedIn</h1>
+                            <p> Confira meus projetos no LinkedIn e veja como tenho aplicado minhas habilidades em
+                                soluções inovadoras.</p>
+
+                            <div class="sci">
+                                <i class='bx bxl-linkedin-square'></i>
+                            </div>
+
+                            <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary"> Saiba mais </a>
+                        </div>
                     </div>
 
-                    <div class="cardSlides" onclick="intro3();">
-                        <span class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Coala.png" alt="img" />
-                        </span>
-                        <h1> Projeto Coala </h1>
-                    </div>
+                    <div class="card ">
+                        <div class="card-img">
+                            <img src="src/img/introduction/carousel/github.webp">
+                        </div>
 
-                    <div class="cardSlides" onclick="intro4();">
-                        <span class="fieldImg">
-                            <img src="src/img/projetos/Projeto_ARK_01.png" alt="img" />
-                        </span>
-                        <h1> Projeto Ark 1 </h1>
+                        <div class="card-text">
+                            <h1>Meu GitHub</h1>
+                            <p> Dê uma olhada no meu GitHub para ver os projetos que desenvolvi e como estou aplicando
+                                minhas habilidades em programação e desenvolvimento.</p>
+
+                            <div class="sci">
+                                <i class='bx bxl-github'></i>
+                            </div>
+
+                            <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank"
+                                rel="noopener noreferrer" class="btn-primary"> Saiba mais </a>
+                        </div>
                     </div>
                 </div>
 
-                <ul class="slidesListWithBar">
-                    <div class="cardSlidesBar" id="cardSlidesBar">
-                        <div onclick="intro0();" class="active"></div>
-                        <div onclick="intro1();"></div>
-                        <div onclick="intro2();"></div>
-                        <div onclick="intro3();"></div>
-                        <div onclick="intro4();"></div>
-                    </div>
-                </ul>
+                <div id="introductionCarouselSelect" class="container-carousel-select">
+                    <figure class="card active" onclick="slidesCarousel(0);">
+                        <div class="card-container-img">
+                            <img src="src/img/introduction/carousel/curriculum.webp">
+                            <i class="controlsPause bx bx-pause-circle"></i>
+                        </div>
+
+                        <div class="card-container-text">
+                            <h1> Meu Currículo </h1>
+                        </div>
+                    </figure>
+
+                    <figure class="card" onclick="slidesCarousel(1);">
+                        <div class="card-container-img">
+                            <img src="src/img/introduction/carousel/developed_projects.webp">
+                            <i class="controlsPause bx bx-pause-circle"></i>
+                        </div>
+
+                        <div class="card-container-text">
+                            <h1> Meus Projetos Desenvolvidos </h1>
+                        </div>
+                    </figure>
+
+                    <figure class="card" onclick="slidesCarousel(2);">
+                        <div class="card-container-img">
+                            <img src="src/img/introduction/carousel/linkedin.webp">
+                            <i class="controlsPause bx bx-pause-circle"></i>
+                        </div>
+
+                        <div class="card-container-text">
+                            <h1> Meu LinkedIn </h1>
+                        </div>
+                    </figure>
+
+                    <figure class="card" onclick="slidesCarousel(3);">
+                        <div class="card-container-img">
+                            <img src="src/img/introduction/carousel/github.webp">
+                            <i class="controlsPause bx bx-pause-circle"></i>
+                        </div>
+
+                        <div class="card-container-text">
+                            <h1> Meu GitHub </h1>
+                        </div>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
+
 
     <section class="information" id="information">
-        <div class="row">
-            <div class="fieldLeft">
-                <div class="fieldImg">
-                    <img src="src/img/base/b2.png" alt="img" />
-                </div>
+        <div class="container">
+            <div class="container-img">
+                <img id="imgProfile" src="src/img/information/profile.webp" alt="img" />
             </div>
 
-            <div class="fieldRight">
-                <div class="titleField">
-                    <h1> Victor <span> Augusto </span></h1>
-                </div>
-                <h2> Informações </h2>
-                <p> Eu tenho formação técnica em Informática pelo CTF e estou cursando bacharelado em Ciência da
-                    Computação pela UNIP. Iniciei na programação em 2016 e desenvolvi projeto em diferentes linguagens
-                    de programação. Atualmente estou focado em utilizar: Java, JavaScript, PHP e Python. </p>
-
-                <p> Em meus projetos desenvolvidos incluem, desenvolvimento de programas para o gerenciamento, app para
-                    dispositivos Android, aplicações em front-end e back-end, games voltados a educação, aplicações em
-                    RA (realidade Aumentada), conhecimento em design gráfico 2D e 3D e outros projetos desenvolvidos.
+            <div id="textProfile" class="container-text">
+                <h1> Oi, meu nome é <span> Victor Augusto</span>. Prazer!</h1>
+                <h2> Desenvolvedor </h2>
+                <p> Eu sou desenvolvedor Júnior com sólida experiência em desenvolvimento de software, websites e
+                    aplicativos móveis. Com formação academia em Ciências da Computação pela Universidade Paulista
+                    (UNIP) e Técnico em Informática pelo Colégio Técnico de Floriano (CTF). Iniciei na programação em
+                    2016 e desenvolvi projeto em diferentes linguagens de programação. Atualmente estou focado em
+                    utilizar: Java, JavaScript e TypeScript.
                 </p>
-                <p>Atualmente, desejo iniciar no mercado de trabalho como desenvolvedor. </p>
-                <a class="btn"
-                    href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
-                    target="_blank" rel="noopener noreferrer"> Baixar
-                    Currículo
-                </a>
 
-                <ul class="sci">
-                    <li><a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank"
-                            rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-                </ul>
+                <p> Em meus projetos desenvolvidos incluem, desenvolvimento front-end e back-end (full-stack) com
+                    ReactJS e Node.js, desenvolvimento de softwares e aplicativos móveis, games voltados a educação,
+                    aplicações em realidade aumentada e outros projetos desenvolvidos. Possuo experiente com bancos de
+                    dados (MySQL, PostgreSQL, MongoDB), ferramentas para controle de versão (Git e GitHub), forte
+                    conhecimento em design gráfico 2D/3D e sou adepto das metodologias ágeis como Scrum, Kanban e XP.
+                </p>
+
+                <p> Atualmente, busco uma oportunidade de resolver grades problemas e transforma ideias em soluções
+                    digitais.</p>
+
+                <div class="container-btn">
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                        target="_blank" rel="noopener noreferrer" class="btn-primary"> <i class='bx bxs-download'></i>
+                        Baixar
+                        Currículo</a>
+
+                    <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-linkedin-square'></i> Meu
+                        LinkedIn </a>
+
+                    <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary"> <i class='bx bxl-github'></i> Meu GitHub </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="formation" id="formation">
-        <div class="titleField">
-            <h1> Formação <span> Acadêmica </span></h1>
+    <section id="projects" class="project">
+        <div class="title">
+            <h2> Projetos <span> Desenvolvidos </span> </h2>
         </div>
         <div class="container">
             <div class="card">
-                <h1 class="texth1">Bacharelato em Ciência da Computação </h1>
-                <h2 class="texth2">(UNIP) - Universidade Paulista </h2>
-                <h3 class="texth3"> Previsão de término - Junho 2023 </h3>
+                <div class="container-card">
+                    <div class="container-card-img-first">
+                        <img class="active" src="src/img/project/projeto_fenix/img01.webp" alt="projeto_fenix">
+                        <img src="src/img/project/projeto_fenix/img02.webp" alt="projeto_fenix">
+                        <img src="src/img/project/projeto_fenix/img03.webp" alt="projeto_fenix">
+                        <img src="src/img/project/projeto_fenix/img04.webp" alt="projeto_fenix">
+                        <img src="src/img/project/projeto_fenix/img05.webp" alt="projeto_fenix">
+                        <img src="src/img/project/projeto_fenix/img06.webp" alt="projeto_fenix">
+                    </div>
+                    <div class="container-img-second">
+                        <img src="src/img/project/projeto_fenix/icon.webp" alt="projeto_fenix">
+                    </div>
+                    <div class="container-text">
+                        <div class="container-icon">
+                            <i class='bx bxs-file-html'></i>
+                            <i class='bx bxs-file-css'></i>
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <h1>Projeto Fênix</h1>
+                        <p> Com o objetivo de demonstrar minhas habilidades como desenvolvedor, neste projeto desenvolvi
+                            3 sites focados nas maiores plataformas de videogames da atualidade: PlayStation, Xbox,
+                            Nintendo. Cada site foi criado para destacar os produtos, jogos e serviços exclusivos de
+                            cada empresa.</p>
+                        <p>suas publicações.O projeto foi desenvolvido utilizando HTML, CSS e JS (JavaScript) juntamente
+                            com a biblioteca de ícones Font Awesome. Para o Back-End utilizei Google firebase.
+                        </p>
+
+                        <p> Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento. </p>
+                    </div>
+                </div>
+                <div class="container-btn">
+                    <a href="https://projeto-fenix-playstation.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary"> PlayStation <i class='bx bxs-pointer'></i> </a>
+
+                    <a href="https://projeto-fenix-xbox.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary"> Xbox <i class='bx bxs-pointer'></i> </a>
+
+                    <a href="https://projeto-fenix-nintendo.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary"> Nintendo <i class='bx bxs-pointer'></i> </a>
+
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-github'></i> Repositório do
+                        projeto </a>
+                </div>
             </div>
 
             <div class="card">
-                <h1 class="texth1">Curso START 5.0 </h1>
-                <h2 class="texth2">Escola SAGA de Computação Gráfica e Artes Digitais </h2>
-                <h3 class="texth3">Previsão de término - Junho 2023</h3>
+                <div class="container-card">
+                    <div class="container-card-img-first">
+                        <img class="active" src="src/img/project/projeto_sydis/img01.webp" alt="projeto_sydis">
+                        <img src="src/img/project/projeto_sydis/img02.webp" alt="projeto_sydis">
+                        <img src="src/img/project/projeto_sydis/img03.webp" alt="projeto_sydis">
+                        <img src="src/img/project/projeto_sydis/img04.webp" alt="projeto_sydis">
+                    </div>
+                    <div class="container-img-second">
+                        <img src="src/img/project/projeto_sydis/icon.webp" alt="projeto_sydis">
+                    </div>
+                    <div class="container-text">
+                        <div class="container-icon">
+                            <i class='bx bxl-java'></i>
+                            <i class='bx bxl-android'></i>
+                            <i class='bx bxl-firebase'></i>
+                        </div>
+                        <h1>Projeto SyDis</h1>
+                        <p> Com o objetivo de demonstrar minhas habilidades como desenvolvedor, neste projeto desenvolvi
+                            um aplicativo para dispositivos móveis Android, capaz de reportar problemas ambientais.</p>
+
+                        <p> Com o app, os usuários podem criar contas, fazer login, recuperar senhas e visualizar
+                            informações pessoais. </p>
+
+                        <p>Após o login dos usuários, é possível reportar incidentes ambientais, como alagamentos,
+                            incêndios, desmoronamentos, entre outros. Além disso, o aplicativo permite visualizar e
+                            comentar as ocorrências adicionadas por outros usuários.</p>
+
+                        <p>O app foi desenvolvido no Android Studio com Java, e o Back-End utiliza os serviços do Google
+                            Firebase. Este projeto é uma prova da minha habilidade em transformar ideias em realidade.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="container-btn">
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_SyDis/tree/main/APK%20do%20projeto%20SyDis"
+                        target="_blank" rel="noopener noreferrer" class="btn-primary"> <i class='bx bxs-download'></i>
+                        Baixar APK </a>
+
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_SyDis" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-github'></i> Repositório do
+                        projeto </a>
+                </div>
             </div>
 
             <div class="card">
-                <h1 class="texth1">Ensino Técnico em Informática - Completo </h1>
-                <h2 class="texth2">(CTF) - Colégio Técnico De Floriano </h2>
-                <h3 class="texth3">Conclusão - 2017.</h3>
+                <div class="container-card">
+                    <div class="container-card-img-first">
+                        <img class="active" src="src/img/project/projeto_ornitorrinco/img01.webp"
+                            alt="projeto_ornitorrinco">
+                        <img src="src/img/project/projeto_ornitorrinco/img02.webp" alt="projeto_ornitorrinco">
+                        <img src="src/img/project/projeto_ornitorrinco/img03.webp" alt="projeto_ornitorrinco">
+                        <img src="src/img/project/projeto_ornitorrinco/img04.webp" alt="projeto_ornitorrinco">
+                    </div>
+                    <div class="container-img-second">
+                        <img src="src/img/project/projeto_ornitorrinco/icon.webp" alt="projeto_ornitorrinco">
+                    </div>
+                    <div class="container-text">
+                        <div class="container-icon">
+                            <i class='bx bxl-nodejs'></i>
+                            <i class='bx bxl-typescript'></i>
+                            <i class='bx bxs-data'></i>
+                        </div>
+                        <h1>Projeto Ornitorrinco</h1>
+                        <p> Com o objetivo de demonstrar minhas habilidades como desenvolvedor, neste projeto criei uma
+                            API REST que permite aos usuários realizar diversas ações, como: criar contas, recuperar
+                            senhas, fazer login, visualizar e atualizar suas informações pessoais e de conta, além de
+                            alterar a foto de perfil. A API também inclui um sistema de autenticação em dois fatores
+                            (2FA) via e-mail. </p>
+
+                        <p> Desenvolvido com Node.js, TypeScript e MySQL, este projeto é uma prova da minha habilidade
+                            em transformar ideias em realidade. </p>
+
+                        <p>Algumas das bibliotecas utilizadas nesta API são: Express, Jsonwebtoken, Bcrypt, Nodemailer,
+                            Multer e Dotenv.</p>
+                    </div>
+                </div>
+                <div class="container-btn">
+
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Ornitorrinco" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-github'></i> Repositório do
+                        projeto </a>
+                </div>
             </div>
 
             <div class="card">
-                <h1 class="texth1">Ensino Médio - Completo </h1>
-                <h2 class="texth2">(CTF) - Colégio Técnico De Floriano </h2>
-                <h3 class="texth3">Conclusão - 2018.</h3>
-            </div>
-        </div>
-    </section>
+                <div class="container-card">
+                    <div class="container-card-img-first">
+                        <img class="active" src="src/img/project/projeto_linus/img01.webp" alt="projeto_linus">
+                        <img src="src/img/project/projeto_linus/img02.webp" alt="projeto_linus">
+                        <img src="src/img/project/projeto_linus/img03.webp" alt="projeto_linus">
+                        <img src="src/img/project/projeto_linus/img04.webp" alt="projeto_linus">
+                        <img src="src/img/project/projeto_linus/img05.webp" alt="projeto_linus">
+                        <img src="src/img/project/projeto_linus/img06.webp" alt="projeto_linus">
+                    </div>
+                    <div class="container-img-second">
+                        <img src="src/img/project/projeto_linus/icon.webp" alt="projeto_linus">
+                    </div>
+                    <div class="container-text">
+                        <div class="container-icon">
+                            <i class='bx bxl-android'></i>
+                            <i class='bx bxl-play-store'></i>
+                            <i class='bx bxs-joystick'></i>
+                        </div>
+                        <h1>Projeto LINUS</h1>
+                        <p> Com objetivo de criar um jogo interativo para aperfeiçoar o aprendizado dos alunos, através
+                            das tecnologias nas instituições de ensino, relacionando o conteúdo de distribuição
+                            eletrônica e tabela periódica, neste projeto participei do desenvolvimento de um jogo que
+                            funciona da seguinte forma: será sorteada aleatoriamente a configuração eletrônica de um
+                            elemento químico, e com base nisso, o jogador deverá clicar na posição da tabela periódica
+                            correspondente a esse elemento químico o mais rápido possível.</p>
 
-    <section class="projects" id="projects">
-        <div class="titleField">
-            <h1> Projetos <span> Desenvolvidos </span></h1>
-        </div>
-        <div class="row">
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Coala.png">
-                        </div>
-                        <h1>Projeto Coala </h1>
-                        <p> Com o objetivo de demostrar as minhas habilidades como desenvolvedor, desenvolvi
-                            esse projeto que informa o horário e a data atual, acordo com o horário de
-                            Brasília, a hora oficial do Brasil. O site também conta com um calendário que
-                            possui algumas interações.
-                            <span>
-                                O projeto foi desenvolvido utilizando apenas HTML, CSS e JS (JavaScript).
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://projeto-coala.web.app/" target="_blank" rel="noopener noreferrer"> Explorer
-                            </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Coala" target="_blank"
-                                rel="noopener noreferrer"> GitHub
-                            </a>
-                        </div>
+                        <p>O projeto foi desenvolvido utilizando a Godot Engine, juntamente com sua linguagem de
+                            programação própria, GDScript, similar ao Python.</p>
                     </div>
                 </div>
-            </div>
+                <div class="container-btn">
 
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Hamster.png">
-                        </div>
-                        <h1>Projeto Hamster </h1>
-                        <p> Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi
-                            esse projeto para gerar um acesso rápido, por um link ou QR Code, de um contato
-                            do WhatsApp, facilitando assim o compartilhamento do mesmo. Para isso, basta
-                            informar o número de WhatsApp que deseja compartilhar, e uma mensagem que deseja
-                            vincular ou contato (a mensagem sendo opcional).
-                            <span>
-                                O projeto foi desenvolvido utilizando HTML, CSS, JS (JavaScript) juntamente
-                                com a biblioteca Jquery e qrCodeJs.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://projeto-hamster.web.app/" target="_blank" rel="noopener noreferrer">
-                                Explorer </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Hamster" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <a href="https://play.google.com/store/apps/details?id=br.ufpi.ctf.peia.linus&pli=1" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-play-store'></i> Projeto na
+                        Play Store </a>
 
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Onca_Pintada.png">
-                        </div>
-                        <h1>Projeto Onça-Pintada </h1>
-                        <p> Com objetivo de demostrar as minhas habilidades como desenvolvedor, desenvolvi
-                            esse projeto
-                            que converte valores entre moedas. Para isso, basta informar o valor que
-                            pretende converter
-                            e selecionar a moeda de origem e a
-                            moeda que pretende ser convertida. As moedas utilizadas são: Dólar, Euros e
-                            Reais, no futuro
-                            pretendo adicionar mais moedas.
-                            <span>
-                                O projeto foi desenvolvido utilizando HTML, CSS e JS (JavaScript) juntamente
-                                com a biblioteca de ícones Font Awesome.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://projeto-onca-pintada.web.app/" target="_blank" rel="noopener noreferrer">
-                                Explorer </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada"
-                                target="_blank" rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Digital_Resident.png">
-                        </div>
-                        <h1>Digital Residence </h1>
-                        <p> O Software Digital Residete tem objetivo de gerenciar o registro
-                            de alunos que passam a residir no alojamento do CTF/UFPI.
-                            <span>
-                                O projeto foi desenvolvido utilizando Java e SQL.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Digital-Residence" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Real_Organic.png">
-                        </div>
-                        <h1>Real Organic </h1>
-                        <p> Real Organic e um software de realidade aumentada (RA) para
-                            dispositivo móvel que auxiliar os alunos na compreensão da
-                            Química Orgânica, utilizando QR Code, para gera os átonos na
-                            tela do dispositivo.
-                            <span>
-                                O projeto foi desenvolvido utilizando Unity Engine e Vuforia.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Real_Organic" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Linus.jpeg">
-                        </div>
-                        <h1>LINUS </h1>
-                        <p> O jogo LINUS foi desenvolvido no intuito de aperfeiçoar o modo
-                            de aprendizagem dos alunos, através das tecnologias, nas
-                            instituições de ensino, com relação ao conteúdo de distribuição
-                            eletrônica e tabela periódica.
-                            <span>
-                                O projeto foi desenvolvido utilizando Godot Engine.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://play.google.com/store/apps/details?id=br.ufpi.ctf.peia.linus"
-                                target="_blank" rel="noopener noreferrer">
-                                Play Store
-                            </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/LINUS" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Carpa.png">
-                        </div>
-                        <h1> Projeto Carpa </h1>
-                        <p> Com objetivo de demonstra as minhas habilidades como desenvolvedor, desenvolvi
-                            esse projeto com o intuito de criar um jogo online onde a linguagem de
-                            programação predominante seria o JavaScript, rodando em navegadores de web,
-                            baseado nisso, desenvolvi o jogo da velha multiplayer online.
-                            <br>
-                            Para jogar basta criar uma conta e escolheu modo de
-                            jogo. Você também pode personalizar a sua marca, temos mais de 50 opções a sua
-                            escolha. A única desvantagem nesse projeto seria referente ao banco de dados,
-                            como estou utilizando um acesso gratuito do Google firebase, optei por limitar o
-                            número de contas usuários.
-                            <span>
-                                O projeto foi desenvolvido utilizando HTML, CSS e JS (JavaScript) juntamente
-                                com
-                                a biblioteca de ícones Font Awesome. Para o Back-End utilizei Google
-                                firebase.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto-Carpa" target="_blank"
-                                rel="noopener noreferrer"> Explorer </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto-Carpa" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Sytis_1.png">
-                        </div>
-                        <h1> Projeto Sytis </h1>
-                        <p> Com objetivo de demonstrar conhecimento adquirido no bacharelado de ciência da
-                            computação na Universidade Paulista (UNIP), a atividade prática superlativa
-                            número 8 se refere a concepção de duas aplicações em diferentes linguagens de
-                            programação que utiliza o mesmo banco de dados capaz de reportar situações em
-                            que possam prejudicar o meio ambiente.
-                            <br>
-                            Baseado nessas informações desenvolve um site e um aplicativo Android onde
-                            por ambas aplicações é possível gerenciar sua conta de usuário(criar uma
-                            conta de usuário, realizar o seu login, recuperar a senha através do e-mail e
-                            visualizar as informações de sua conta). A partir disso é possível reportar
-                            situações em que possam prejudicar o meio ambiente, citando alguns exemplos:
-                            pontos de alagamentos, pontos de incêndio, pontos de desmoronamento e assim por
-                            diante, também é possível visualizar e comentar as ocorrências adicionadas.
-                            <span>
-                                O projeto foi desenvolvido utilizando o Android Studio com a linguagem Java
-                                e o front-end do site utilizando o HTML, CSS e JS (JavaScript). Para o
-                                Back-End
-                                utilizei Google firebase.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/APS-8" target="_blank"
-                                rel="noopener noreferrer"> Explorer </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/APS-8" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="card">
-                    <div class="fieldText">
-                        <div class="fieldImg">
-                            <img src="src/img/projetos/Projeto_Arara_Azul.png">
-                        </div>
-                        <h1> Projeto Arara Azul </h1>
-                        <p> Com objetivo de demonstra as minhas habilidades como desenvolvedor, desenvolvi
-                            esse projeto sistema com a capacidade de divulgar imagens publicadas por
-                            usuários que possuem conta na plataforma. Para realizar uma publicação no
-                            sistema, basta criar uma conta de usuário. Através do seu perfil de usuário é
-                            possível visualizar, alterar e excluir todos os dados da sua conta e de suas
-                            publicações.
-                            <span>
-                                O projeto foi desenvolvido utilizando HTML, CSS e JS (JavaScript) juntamente
-                                com
-                                a biblioteca de ícones Font Awesome. Para o Back-End utilizei Google
-                                firebase.
-                            </span>
-                        </p>
-                        <div class="fieldBTN">
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto-Arara-Azul" target="_blank"
-                                rel="noopener noreferrer"> Explorer </a>
-                            <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto-Arara-Azul" target="_blank"
-                                rel="noopener noreferrer"> GitHub </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a href="projetos-desenvolvidos.html"> Ver Todos </a>
-
-    </section>
-
-    <section class="skills" id="skills">
-        <div class="titleField">
-            <h1> Habilidades <span> Pessoais </span></h1>
-        </div>
-
-        <div class="row">
-            <div class="col33">
-                <div class="container">
-                    <i class="fas fa-laptop"></i>
-                    <h2>Design Gráfico</h2>
-                    <p>
-                        Arte Vetorial, Edição de Imagens, Pintura Digital, Edição Áudio Visual e Animação 2D e 3D.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="container">
-                    <i class="fas fa-code"></i>
-                    <h2>Linguagem de Programação</h2>
-                    <p>
-                        Java, JavaScript, Python e PHP.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="container">
-                    <i class="far fa-file-code"></i>
-                    <h2>Desenvolvedor Front-End</h2>
-                    <p>
-                        HTML, CSS e JavaScript. Framework: Bootstrap, jQuery e React.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col33">
-                <div class="container">
-                    <i class="fas fa-database"></i>
-                    <h2>Desenvolvedor Back-End</h2>
-                    <p>
-                        Java, PHP e Python. Framework: CakePHP.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="container">
-                    <i class="fab fa-android"></i>
-                    <h2>Desenvolvedor Android</h2>
-                    <p>
-                        Android Studio com a Linguagem Java utilizando SQL ou Firebase.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col33">
-                <div class="container">
-                    <i class="fas fa-plus"></i>
-                    <h2>Domínio Sobre:</h2>
-                    <p>
-                        Analise de Sistema; Banco de Dados; Desenvolvimento de front e back-end para web e mobile;
-                        Design Digital; Ferramentas Git & GitHub; Manutenção em computadores; Metodologias ágeis:
-                        Kanban,
-                        Scrum e XP; Redes de computadores; Segurança de dados; Sistema Operacional (Linux/Windows).
-                    </p>
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/Projeto_LINUS" target="_blank"
+                        rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-github'></i> Repositório do
+                        projeto </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <form class="container" action="https://formspree.io/f/xgepgola" method="POST">
-            <div class="titleField">
-                <h1> Entre <span> em Contato </span></h1>
-            </div>
 
-            <div class="row">
-                <div class="col50">
-                    <div class="inputBox">
-                        <input type="text" name="Name" required="required">
-                        <span class="text"> Nome: </span>
-                        <span class="line"></span>
-                    </div>
+    <section id="formation" class="formation">
+        <div class="title">
+            <h2> Formação <span> Acadêmica </span> </h2>
+        </div>
+        <div class="container">
+            <div class="container-card">
+                <div class="card">
+                    <h1> Bacharelato em Ciência da Computação </h1>
+                    <h2> (UNIP) - Universidade Paulista </h2>
+                    <p> Conclusão - Dezembro 2023 </p>
                 </div>
 
-                <div class="col50">
-                    <div class="inputBox">
-                        <input type="text" name="E-mail" required="required">
-                        <span class="text"> E-mail: </span>
-                        <span class="line"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col50">
-                    <div class="inputBox">
-                        <input type="text" name="Telefone" required="required">
-                        <span class="text"> Telefone: </span>
-                        <span class="line"></span>
-                    </div>
+                <div class="card">
+                    <h1> Curso START 5.0 </h1>
+                    <h2> Escola SAGA de Computação Gráfica e Artes Digitais </h2>
+                    <p> Conclusão - junho 2023 </p>
                 </div>
 
-                <div class="col50">
-                    <div class="inputBox">
-                        <input type="text" name="Assunto" required="required">
-                        <span class="text"> Assunto: </span>
-                        <span class="line"></span>
-                    </div>
+                <div class="card">
+                    <h1> Ensino Técnico em Informática - Completo </h1>
+                    <h2> (CTF) - Colégio Técnico De Floriano </h2>
+                    <p> Conclusão - 2017. </p>
+                </div>
+
+                <div class="card">
+                    <h1> Ensino Médio - Completo </h1>
+                    <h2> (CTF) - Colégio Técnico De Floriano </h2>
+                    <p> Conclusão - 2018.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="row">
-                <div class="col100">
-                    <div class="inputBox textarea">
-                        <textarea name="Mensagem" required="required"></textarea>
-                        <span class="text"> Mensagem: </span>
-                        <span class="line"></span>
+
+    <section id="skills" class="skills">
+        <div class="title">
+            <h2> Habilidades <span> Pessoais </span> </h2>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <i class='bx bx-devices'></i>
+                <h1> Desenvolvedor Front-End </h1>
+                <p> HTML, CSS, JavaScript. Frameworks e Bibliotecas: React, Tailwind CSS, e Bootstrap. </p>
+            </div>
+
+            <div class="card">
+                <i class='bx bx-code-alt'></i>
+                <h1> Linguagem de Programação </h1>
+                <p> Java, JavaScript e TypeScript. </p>
+            </div>
+
+            <div class="card">
+                <i class='bx bxs-data'></i>
+                <h1> Desenvolvedor Back-End </h1>
+                <p> Java, JavaScript e TypeScript com Node.js. Frameworks: Spring Boot, Express e outros. </br> Bancos
+                    de Dados: MySQL, PostgreSQL e MongoDB </p>
+            </div>
+
+            <div class="card">
+                <i class='bx bx-laptop'></i>
+                <h1> Design Gráfico </h1>
+                <p> Arte Vetorial, Edição de Imagens, Pintura Digital, Edição Áudio Visual e Animação 2D e 3D. </p>
+            </div>
+
+            <div class="card">
+                <i class='bx bxl-android'></i>
+                <h1> Desenvolvedor Android </h1>
+                <p> Android Studio com a Linguagem Java utilizando SQL ou Firebase. </p>
+            </div>
+
+            <div class="card">
+                <i class='bx bx-plus-medical'></i>
+                <h1> Domínio Sobre: </h1>
+                <p> Analise de Sistema; Banco de Dados; Desenvolvimento de front e back-end para web e mobile; Design
+                    Digital; Ferramentas Git & GitHub; Manutenção em computadores; Metodologias ágeis: Kanban, Scrum e
+                    XP; Redes de computadores; Segurança de dados; Sistema Operacional (Linux/Windows) </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="title">
+            <h2> Entre <span> em Contato </span> </h2>
+        </div>
+
+        <div class="container">
+            <div class="container-information">
+                <div class="card">
+                    <div class="container-text">
+                        <h1> Me mande um email: </h1>
+                        <a href="mailto:victor.augusto.desenvolvedor@gmail.com" target="_blank"
+                            rel="noopener noreferrer" class="btn-email">
+                            victor.augusto.desenvolvedor@gmail.com. </a>
+                        <a id="copyEmail" class="btn-primary"> <i class='bx bx-mail-send'></i> Copiar email</a>
                     </div>
+                </div>
 
-                    <div class="fieldBTN">
-                        <input class="btn" type="submit" value="Enviar">
+                <div class="card">
+                    <div class="container-text">
+                        <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-linkedin-square'></i>
+                            Meu LinkedIn </a>
+                    </div>
+                </div>
 
-                        <p>ou se preferir</p>
-
-                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511945181475" class="whatsapp"> WhatsApp
-                            Web </a>
+                <div class="card">
+                    <div class="container-text">
+                        <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank"
+                            rel="noopener noreferrer" class="btn-primary"> <i class='bx bxl-github'></i> Meu GitHub </a>
                     </div>
                 </div>
             </div>
-        </form>
+
+            <form class="container-form" action="https://formspree.io/f/xgepgola" method="POST">
+                <div class="inputBox">
+                    <input type="text" name="Name" required="required" placeholder="" id="inputName">
+                    <span class="text"> Nome: </span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="E-mail" required="required" placeholder="" id="inputEmail">
+                    <span class="text"> E-mail: </span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="Telefone" required="required" placeholder="" id="inputNumber">
+                    <span class="text"> Telefone: </span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="Assunto" required="required" placeholder="" id="inputSubject">
+                    <span class="text"> Assunto: </span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="inputBox textarea">
+                    <textarea name="Mensagem" required="required" placeholder="" id="inputMessage"></textarea>
+                    <span class="text"> Mensagem: </span>
+                    <span class="line"></span>
+                </div>
+
+                <input class="btn-primary" type="submit" value="Enviar">
+                <h1> ou </h1>
+                <a class="btn-primary whatsApp" href="https://api.whatsapp.com/send?1=pt_BR&phone=5511945181475"
+                    target="_blank" rel="noopener noreferrer"> WhatsApp Web </a>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="about">
-                <div class="titleField">
-                    <h1> Sobre <span> o Projeto </span></h1>
-                </div>
-                <p> Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por mim.</p>
-                <p> O objetivo é demonstrar os meus projetos e habilidades como desenvolvedor. </p>
-                <p> O portfólio foi desenvolvido utilizando HTML, CSS e JS (JavaScript). </p>
-                <p> Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para ajudar no
+        <div class="footer-container">
+            <div class="footer-container-about">
+                <h1> Sobre o Projeto </h1>
+                <p> Olá! O meu nome é Victor Augusto e este é o meu portfólio, desenvolvido por mim.</p>
+                <p> O objetivo deste projeto é apresentar meus trabalhos e habilidades como desenvolvedor. </p>
+                <p> Desenvolvido com HTML, CSS e JavaScript, este projeto é uma prova da minha habilidade em transformar
+                    ideias em realidade. </p>
+                <p> Utilizei também a API Formspree e a biblioteca de ícones Boxicons para auxiliar no
                     desenvolvimento.</p>
                 <p> Então o que você achou desse projeto? </p>
-                <p> Mande a sua mensagem para esse e-mail: victor.augusto.desenvolvedor@gmail.com. </p>
-                <p> E se você quiser ver mais dos meus projetos, confiram o meu LinkedIn ou o meu GitHub. </p>
-                <p> Para mais informações de contatos e afins, o meu currículo se encontra a sua disposição logo a
-                    baixo.
+                <p> Mande a sua mensagem para esse e-mail:
+                    <a href="mailto:victor.augusto.desenvolvedor@gmail.com" target="_blank" rel="noopener noreferrer">
+                        victor.augusto.desenvolvedor@gmail.com. </a>
                 </p>
-
-                <div class="fieldBTN">
+                <p> E se você quiser ver mais dos meus projetos, confiram o
+                    <a href=" https://www.linkedin.com/in/victor-augusto-desenvolvedor/ " target="_blank"
+                        rel="noopener noreferrer"> meu LinkedIn </a> ou o
+                    <a href=" https://github.com/VictorAugustoRodriguesGomes " target="_blank"
+                        rel="noopener noreferrer"> meu GitHub. </a>
+                </p>
+                <p> Para mais informações de contatos e afins, o
                     <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
-                        target="_blank" rel="noopener noreferrer" class="btn">Baixar Currículo</a>
-
-                    <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
-                        rel="noopener noreferrer" class="btn"> Meu LinkedIn </a>
-
-                    <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer"
-                        class="btn"> Meu GitHub </a>
-                </div>
+                        target="_blank" rel="noopener noreferrer"> meu currículo </a>
+                    se encontra a sua disposição logo a baixo.
+                </p>
+                <p> Prepare-se para ser inspirado. Este é apenas o começo! </p>
             </div>
 
-            <div class="links">
-                <div class="titleField">
-                    <h1> Links <span> Rapidos </span></h1>
-                </div>
+            <div class="footer-container-links">
+                <h1> Links Rapidos </h1>
                 <ul>
                     <li> <a href="#introduction"> Início </a> </li>
-                    <li> <a href="#information"> Informação </a> </li>
-                    <li> <a href="#formation"> Formação </a> </li>
+                    <li> <a href="#information"> Informações </a> </li>
                     <li> <a href="#projects"> Projetos </a> </li>
+                    <li> <a href="#formation"> Formação </a> </li>
                     <li> <a href="#skills"> Habilidades </a> </li>
                     <li> <a href="#contact"> Contatos </a> </li>
                 </ul>
             </div>
         </div>
+
+        <div class="footer-container-btn">
+            <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                target="_blank" rel="noopener noreferrer" class="btn-primary">Baixar Currículo</a>
+
+            <a href="https://victor-augusto-dev.firebaseapp.com/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu Portfólio </a>
+
+            <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                rel="noopener noreferrer" class="btn-primary"> Meu LinkedIn </a>
+
+            <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu GitHub </a>
+        </div>
     </footer>
 
     <div class="copyrightText">
-        <p>Copyright © 2022-Atual. Victor Augusto. Todos os direitos reservados.</p>
+        <p>Copyright © 2024-Atual. Victor Augusto. Todos os direitos reservados.</p>
     </div>
 
+    <script type="text/javascript" src="src/js/card.js"> </script>
     <script type="text/javascript" src="src/js/header.js"> </script>
+    <script type="text/javascript" src="src/js/animate.js"> </script>
+    <script type="text/javascript" src="src/js/loading.js"> </script>
+    <script type="text/javascript" src="src/js/contact.js"> </script>
+    <script type="text/javascript" src="src/js/carousel.js"> </script>
+    <script type="text/javascript" src="src/js/background.js"> </script>
+    <script type="text/javascript" src="src/js/information.js"> </script>
 
 </body>
 

@@ -1,14 +1,87 @@
-var homeAfter = document.querySelector('home');
+let menuActive = 0;
+let navBarIndex = 0;
+let windowScrollHeader = 0;
+
+const homeAfter = document.querySelector('home');
+
+const menu = document.getElementById("menu");
+const li = menu.getElementsByTagName('li');
+
+const introduction = document.getElementById('introduction');
+const information = document.getElementById('information');
+const projects = document.getElementById('projects');
+const formation = document.getElementById('formation');
+const skills = document.getElementById('skills');
+const contact = document.getElementById('contact');
+
+let introductionCoordenadas = 0;
+let informationCoordenadas = 0;
+let projectsCoordenadas = 0;
+let formationCoordenadas = 0;
+let skillsCoordenadas = 0;
+let contactCoordenadas = 0;
+
 window.addEventListener('scroll', function () {
-    var header = document.querySelector('header');
-    var introduction = document.getElementById('introduction');
+    const header = document.querySelector('header');
+    const menuToggle = document.querySelector('.toggle');
+    const menu = document.querySelector('.menu');
     header.classList.toggle('sticky', window.scrollY > 0);
-    introduction.classList.toggle('sticky', window.scrollY > 0);
+    header.classList.toggle('top', window.scrollY == 0);
+
+    menuToggle.classList.remove('active', window.scrollY == 0);
+    menu.classList.remove('active', window.scrollY == 0);
+
+    introductionCoordenadas = introduction.getBoundingClientRect();
+    informationCoordenadas = information.getBoundingClientRect();
+    projectsCoordenadas = projects.getBoundingClientRect();
+    formationCoordenadas = formation.getBoundingClientRect();
+    skillsCoordenadas = skills.getBoundingClientRect();
+    contactCoordenadas = contact.getBoundingClientRect();
+
+    if (introductionCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 0;
+        li[navBarIndex].classList.add('active');
+    }
+
+    if (informationCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 1;
+        li[navBarIndex].classList.add('active');
+    }
+
+    if (projectsCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 2;
+        li[navBarIndex].classList.add('active');
+    }
+
+    if (formationCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 3;
+        li[navBarIndex].classList.add('active');
+    }
+
+    if (skillsCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 4;
+        li[navBarIndex].classList.add('active');
+    }
+
+    if (contactCoordenadas.y <= 50) {
+        li[navBarIndex].classList.remove('active');
+        navBarIndex = 5;
+        li[navBarIndex].classList.add('active');
+    }
+
+    window.scrollY > windowScrollHeader && menuActive != 1 ? header.classList.remove('up') : header.classList.add('up');
+    windowScrollHeader = window.scrollY;
 });
 
 function toggleMenu() {
-    var menuToggle = document.querySelector('.toggle');
-    var menu = document.querySelector('.menu');
+    const menuToggle = document.querySelector('.toggle');
+    const menu = document.querySelector('.menu');
+    menuActive = (menuActive + 1) % 2;
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
 }
@@ -18,101 +91,5 @@ function efeitoMenu() {
     var menu = document.querySelector('.menu');
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
-}
 
-const fieldLeft = document.getElementById('fieldLeft');
-const slidesSelectedWithImageListFieldLeft = fieldLeft.getElementsByTagName('div');
-
-const slidesWithImageList = document.getElementById('slidesWithImageList');
-const slidesSelectedWithImageList = slidesWithImageList.getElementsByTagName('div');
-
-const cardSlidesBar = document.getElementById('cardSlidesBar');
-const slidesSelectedBar = cardSlidesBar.getElementsByTagName('div');
-
-const fieldSlidesText = document.getElementById('fieldSlidesText');
-const slidesSelectedText = fieldSlidesText.getElementsByTagName('div');
-
-var index = 0;
-let timeSlides = 1;
-setInterval(function run() {
-    if (timeSlides != 30) {
-
-    } else {
-        timeSlides = 0;
-        slidesSelectedWithImageList[index].classList.remove('active');
-        slidesSelectedBar[index].classList.remove('active');
-        slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-        slidesSelectedText[index].classList.remove('active');
-        index = (index + 1) % 5;
-        slidesSelectedWithImageList[index].classList.add('active');
-        slidesSelectedBar[index].classList.add('active');
-        slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-        slidesSelectedText[index].classList.add('active');
-    }
-    timeSlides++
-}, 1000);
-
-function intro0() {
-    slidesSelectedWithImageList[index].classList.remove('active');
-    slidesSelectedBar[index].classList.remove('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-    slidesSelectedText[index].classList.remove('active');
-    index = 0;
-    timeSlides = 0;
-    slidesSelectedWithImageList[index].classList.add('active');
-    slidesSelectedBar[index].classList.add('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-    slidesSelectedText[index].classList.add('active');
-}
-
-function intro1() {
-    slidesSelectedWithImageList[index].classList.remove('active');
-    slidesSelectedBar[index].classList.remove('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-    slidesSelectedText[index].classList.remove('active');
-    index = 1;
-    timeSlides = 0;
-    slidesSelectedWithImageList[index].classList.add('active');
-    slidesSelectedBar[index].classList.add('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-    slidesSelectedText[index].classList.add('active');
-}
-
-function intro2() {
-    slidesSelectedWithImageList[index].classList.remove('active');
-    slidesSelectedBar[index].classList.remove('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-    slidesSelectedText[index].classList.remove('active');
-    index = 2;
-    timeSlides = 0;
-    slidesSelectedWithImageList[index].classList.add('active');
-    slidesSelectedBar[index].classList.add('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-    slidesSelectedText[index].classList.add('active');
-}
-
-function intro3() {
-    slidesSelectedWithImageList[index].classList.remove('active');
-    slidesSelectedBar[index].classList.remove('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-    slidesSelectedText[index].classList.remove('active');
-    index = 3;
-    timeSlides = 0;
-    slidesSelectedWithImageList[index].classList.add('active');
-    slidesSelectedBar[index].classList.add('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-    slidesSelectedText[index].classList.add('active');
-}
-
-function intro4() {
-    slidesSelectedWithImageList[index].classList.remove('active');
-    slidesSelectedBar[index].classList.remove('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.remove('active');
-    slidesSelectedText[index].classList.remove('active');
-    index = 4;
-    timeSlides = 0;
-    slidesSelectedWithImageList[index].classList.add('active');
-    slidesSelectedBar[index].classList.add('active');
-    slidesSelectedWithImageListFieldLeft[index].classList.add('active');
-    slidesSelectedText[index].classList.add('active');
 }
