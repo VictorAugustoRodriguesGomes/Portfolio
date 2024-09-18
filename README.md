@@ -19,7 +19,7 @@
 </div>
 
 
-<h2> IMAGENS DO PROJETO </h2> 
+<h2> IMAGENS DO PORTFÓLIO </h2> 
 <div align="center">
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img01.png" width="49.5%"/>
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img02.png" width="49.5%"/>
@@ -33,12 +33,18 @@
 </div> 
 
 
-</br> <div>
-<h2> Pré-requisitos </h2> 
+<div>
+<h2> LINK DO PORTFÓLIO </h2> 
 </div>
 
 #### Para poder ter aceso ao  site clique no link abaixo: 
 1. [Portfólio](https://bit.ly/39IqDrm).
+
+<div>
+<h2> Pré-requisitos </h2> 
+</div>
+
+
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
@@ -48,15 +54,12 @@
 </div> </br>
 
 
-<div>
-<h2> Licença </h2> 
+# Licença
+
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
-</br> <div align="center">
+---------
+ <div align="center">
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img07.png" width="50%"/>
-</div> </div>
-
-
-
-
+</div> 
 
