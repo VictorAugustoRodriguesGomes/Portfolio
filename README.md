@@ -1,20 +1,20 @@
-<h1>  Meu Portfólio. </h1> 
+<p><h1> <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/hi.gif" width="40px"> Olá! Bem-vindo ao meu portfólio. </h1>   
 <div>
-<a href="https://www.linkedin.com/in/victor-augusto-dev" target="_blank"><img alt="Meu-LinkedIn" src="https://img.shields.io/badge/MEU-Linkedin-%230e76a8?style=for-the-badge&logo=appveyor"></a>
-<a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf" target="_blank"><img alt="Meu-Currículo" src="https://img.shields.io/badge/MEU-Currículo-%23003d70?style=for-the-badge&logo=appveyor"></a>
 <a href="https://victor-augusto-dev.web.app/" target="_blank"><img alt="Meu-Portfólio" src="https://img.shields.io/badge/MEU-Portf%C3%B3lio-%23f29200?style=for-the-badge&logo=appveyor"></a>
+<a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf" target="_blank"><img alt="Meu-Currículo" src="https://img.shields.io/badge/MEU-Currículo-%23003d70?style=for-the-badge&logo=appveyor"></a>
+<a href="https://www.linkedin.com/in/victor-augusto-dev" target="_blank"><img alt="Meu-LinkedIn" src="https://img.shields.io/badge/MEU-Linkedin-%230e76a8?style=for-the-badge&logo=appveyor"></a>
   
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 </div>
 
 
-</br> <div>
+<div>
 <h2> INFORMAÇÕES </h2> 
-<p> Olá! O meu nome é Victor Augusto e esse é o meu portfólio, desenvolvido por mim. </br>
-O objetivo é demonstrar os meus projetos e habilidades como desenvolvedor. </br>
-O portfólio foi desenvolvido utilizando HTML, CSS e JS (JavaScript). </br>
-Utilizei também a API Formspree é a biblioteca de ícones Font Awesome para ajudar no desenvolvimento.
-
+<p> Olá! O meu nome é Victor Augusto e este é o meu portfólio, desenvolvido por mim. </p>
+<p> O objetivo deste projeto é apresentar meus trabalhos e habilidades como desenvolvedor. </p>
+<p> O portfólio foi desenvolvido utilizando HTML, CSS e JS (JavaScript). </p>
+<p> Utilizei também a API Formspree e a biblioteca de ícones Boxicons para auxiliar no desenvolvimento.</p>
+<p> Então o que você achou desse projeto? </p>
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
 </div>
 
