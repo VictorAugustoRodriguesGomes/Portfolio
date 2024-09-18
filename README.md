@@ -19,21 +19,14 @@
 </div>
 
 
-</br> <div>
-<h2> ATUALIZAÇÃO DO PROJETO </h2> 
-<div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a1.png" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a2.png" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a3.png" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/a4.png" width="49.5%"/>
-</div> </br>
-
 <h2> IMAGENS DO PROJETO </h2> 
 <div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p2.PNG" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p3.PNG" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p5.PNG" width="49.5%"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p6.PNG" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img01.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img02.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img03.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img04.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img05.png" width="49.5%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img06.png" width="49.5%"/>
 </div> </br> 
 
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
@@ -60,7 +53,7 @@
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 </br> <div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p7.PNG?raw=true" width="50%"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/img%20do%20projeto%20para%20o%20GitHub/img07.png" width="50%"/>
 </div> </div>
 
 
