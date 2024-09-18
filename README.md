@@ -62,3 +62,8 @@ Este projeto é licenciado sob os termos da licença Apache 2.0.
 </br> <div align="center">
 <img src="https://github.com/VictorAugustoRodriguesGomes/Portfolio/blob/main/src/img/github%20base/previous%20version/p7.PNG?raw=true" width="50%"/>
 </div> </div>
+
+
+
+
+
