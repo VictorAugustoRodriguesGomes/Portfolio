@@ -37,7 +37,7 @@
 <h2> LINK DO PORTFÓLIO </h2> 
 </div>
 
-#### Para poder ter aceso ao  site clique no link abaixo: 
+#### Para poder ter aceso ao portfólio clique no link abaixo: 
 1. [Portfólio](https://bit.ly/39IqDrm).
 
 <div>
@@ -51,7 +51,7 @@
 
 <div>
 <img src="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/img/h1%20-%20animation.gif" width="150%">
-</div> </br>
+</div> 
 
 
 # Licença
